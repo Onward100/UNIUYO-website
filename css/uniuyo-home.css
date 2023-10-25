@@ -201,6 +201,51 @@ section {
 /*  Styling for UniUyo news */
 
 
+/*  Styling for Alumni feedback */
+
+.alumni-grid-wrap{
+  position: relative;
+}
+.alumni-grid-content{
+  display: grid;
+  
+}
+.alumni-grid{
+  background-color: var(--black);
+  width: 25%;
+  color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.alumni-grid-image{
+  text-align: center;
+}
+.alumni-grid-info{
+  text-align: center;
+}
+.alumni-grid-info h4{
+  color: var(--green);
+}
+.alumni-grid-item img{
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  border-radius: 50%;
+}
+.alumni-grid-icon{
+  color: var(--green);
+  font-size: 50px;
+  margin-top: -30px;
+}
+
+.alumni-grid-text{
+  width: 260px;
+  margin: auto 30px;
+}
+/*  Styling for Alumni feedback */
+
+
 
 
 
