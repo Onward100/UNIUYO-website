@@ -15,6 +15,12 @@ section {
   border-bottom: 1px solid var(--black);
 }
 
+article{
+  background-color: var(--white);
+  padding: 10px;
+  border-bottom: 1px solid var(--black);
+  text-align: center;
+}
 .logo {
   text-align: center;
 }
@@ -206,9 +212,6 @@ section {
 
 /*  Styling for Alumni feedback */
 
-.alumni-grid-wrap{
-  position: relative;
-}
 .alumni-grid-content{
   display: flex;
   padding: 20px;
@@ -252,6 +255,43 @@ section {
 }
 /*  Styling for Alumni feedback */
 
+/*  Styling for Article */
+
+.article-item img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+  filter: blur(1px);
+  -webkit-filter: blur(2px);
+}
+.uniuyo-article-item{
+  display: flex;
+  margin: auto 150px;
+  gap: 20px;
+}
+
+.article-content-text{
+  width: 330px;
+}
+.article-content-text h3 {
+  position: relative;
+  margin-top: -240px;
+  padding: 10px;
+  color: var(--white);
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.article-content-text p {
+  opacity: .8;
+  color: var(--white);
+  font-size: 19px;
+  padding: 10px;
+  margin-top: -15px;
+}
+/*  Styling for Article */
+
 
 
 
@@ -289,6 +329,17 @@ section {
     display: block;
   }
   .news-content{
+    flex-direction: column;
+    margin: 0;
+  }
+  .alumni-grid-content{
+    flex-direction: column;
+    margin: 0;
+  }
+  .alumni-grid{
+    width: 100%;
+  }
+  .uniuyo-article-item{
     flex-direction: column;
     margin: 0;
   }
