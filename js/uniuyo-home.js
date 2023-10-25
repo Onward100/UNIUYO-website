@@ -1,3 +1,4 @@
+/* Header slider js*/
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.querySelector('.slider-control.prev');
@@ -19,3 +20,6 @@ function moveSlider(direction) {
 
 prevButton.addEventListener('click', () => moveSlider(-1));
 nextButton.addEventListener('click', () => moveSlider(1));
+
+/*  */
+
