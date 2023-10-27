@@ -1,12 +1,15 @@
-*{
+* {
   font-family: 'Poppins', sans-serif;
 }
-  /*  Styling for the Header*/
+
+/*  Styling for the Header*/
 :root {
   --backgound: #D9D9D9;
   --green: #339966;
   --white: #ffffff;
   --black: #333333;
+  --text: #1F1C1C80;
+
 }
 
 section {
@@ -15,12 +18,13 @@ section {
   border-bottom: 1px solid var(--black);
 }
 
-article{
+article {
   background-color: var(--white);
   padding: 10px;
   border-bottom: 1px solid var(--black);
   text-align: center;
 }
+
 .logo {
   text-align: center;
 }
@@ -35,6 +39,7 @@ article{
   position: absolute;
   color: var(--white);
   padding: 20px;
+  font-weight: bold;
   margin: 130px 150px;
 }
 
@@ -106,6 +111,7 @@ article{
   margin: auto 100px;
   display: flex;
   gap: 20px;
+  padding: 10px;
 }
 
 .student-content img {
@@ -171,6 +177,11 @@ article{
 /*  Styling for Campus */
 
 /*  Styling for UniUyo news */
+
+.uniuyo-news {
+  padding: 20px;
+}
+
 .item img {
   background-image: url(/Images/News-1.jpg);
   background-size: cover;
@@ -180,9 +191,11 @@ article{
   filter: blur(1px);
   -webkit-filter: blur(1px);
 }
-.news-content-text{
+
+.news-content-text {
   width: 330px;
 }
+
 .news-content-text h3 {
   position: relative;
   margin-top: -280px;
@@ -206,53 +219,68 @@ article{
   margin-left: 10px;
   margin-top: -20px;
 }
- 
+
 /*  Styling for UniUyo news */
 
 
 /*  Styling for Alumni feedback */
 
-.alumni-grid-content{
-  display: flex;
-  padding: 20px;
-  justify-content: center;
-  gap: 50px;
-  width: 100%;
+.alumni-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-content: center;
 }
 
-.alumni-grid{
-  background-color: var(--black);
-  width: 25%;
-  color: var(--white);
-  border-radius: 10px;
-  padding: 20px;
+.alumni-grid-image {
+  text-align: center;
 }
 
-.alumni-grid-image{
+.alumni-grid-info {
   text-align: center;
 }
-.alumni-grid-info{
-  text-align: center;
-}
-.alumni-grid-info h4{
+
+.alumni-grid-info h4 {
   color: var(--green);
 }
-.alumni-grid-item img{
+
+.alumni-grid-item{
+  background-color: var(--black);
+  color: var(--white);
+}
+.alumni-grid-item2{
+  margin-top: -5em;
+  margin-left: 2em;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.first-grid /* used on the first and third grid box to give space at the botton */{
+  margin-bottom: 1.5em;
+}
+.alumni-grid-item img {
   width: 80px;
   height: 80px;
   background-size: contain;
   border-radius: 50%;
 }
-.alumni-grid-icon{
+.alumni-grid-item2 img {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.fa-quote-left {
   color: var(--green);
   font-size: 50px;
   margin-top: -30px;
 }
 
-.alumni-grid-text{
+.alumni-grid-text {
   width: 260px;
   margin: auto 30px;
 }
+
 /*  Styling for Alumni feedback */
 
 /*  Styling for Article */
@@ -265,15 +293,17 @@ article{
   filter: blur(1px);
   -webkit-filter: blur(2px);
 }
-.uniuyo-article-item{
+
+.uniuyo-article-item {
   display: flex;
   margin: auto 150px;
   gap: 20px;
 }
 
-.article-content-text{
+.article-content-text {
   width: 330px;
 }
+
 .article-content-text h3 {
   position: relative;
   margin-top: -240px;
@@ -290,7 +320,161 @@ article{
   padding: 10px;
   margin-top: -15px;
 }
+
 /*  Styling for Article */
+
+/*  Styling for Donate */
+
+.uniuyo-donate {
+  background-color: var(--black);
+  padding: 20px;
+  border-bottom: 2px solid var(--white);
+}
+
+.uniuyo-donate-items {
+  display: flex;
+  gap: 180px;
+}
+
+.uniuyo-donate-image {
+  margin-left: 50px;
+  color: var(--white);
+  margin-top: 55px;
+}
+
+.uniuyo-donate-image img {
+  border-radius: 20px;
+}
+
+.uniuyo-donate-image h1 {
+  position: relative;
+  top: -120px;
+  font-size: 48px;
+  background-color: var(--text);
+  width: 60%;
+  margin: auto;
+}
+
+.uniuyo-donate button {
+  border: none;
+  outline: none;
+  background-color: var(--green);
+  color: var(--white);
+  position: relative;
+  top: 230px;
+  text-align: center;
+  width: 140%;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  transition: .4s ease;
+}
+
+.uniuyo-donate button:hover {
+  transform: scale(.9);
+}
+
+/*  Styling for Donate */
+
+/*  Styling for Footer */
+
+.uniuyo-footer {
+  display: flex;
+}
+
+footer {
+  background-color: var(--green);
+  padding: 30px;
+}
+
+.footer-logo {
+  margin-left: 45px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 30px;
+  margin-left: -450px;
+}
+
+.find-us h2 {
+  width: 20%;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.find-us p {
+  width: 20%;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.footer-logo img {
+  border-radius: 50%;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 27px;
+}
+
+.footer-social-icons img {
+  transition: .4s ease;
+}
+
+.footer-social-icons img:hover {
+  transform: scale(.8);
+}
+
+.uniuyo-footer .footer-links {
+  text-align: center;
+  margin-left: 20px;
+}
+
+.uniuyo-footer ul {
+  line-height: 40px;
+}
+
+.uniuyo-footer li {
+  list-style-type: none;
+  transition: .4s ease;
+}
+
+.uniuyo-footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.uniuyo-footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: -80px;
+}
+
+.copyright .copyright-text {
+  vertical-align: middle;
+  gap: 5px;
+  color: var(--white);
+  display: flex;
+  margin: auto 495px;
+}
+
+.copyright .copyright-text i {
+  margin-top: 3px;
+}
+
+.copyright .site-credit {
+  font-weight: bold;
+}
+
+/*  Styling for Footer */
 
 
 
@@ -328,19 +512,74 @@ article{
   .picture-flex-content {
     display: block;
   }
-  .news-content{
+
+  .news-content {
     flex-direction: column;
     margin: 0;
   }
-  .alumni-grid-content{
+
+  .alumni-grid-content {
     flex-direction: column;
     margin: 0;
   }
-  .alumni-grid{
+
+  .alumni-grid {
     width: 100%;
   }
-  .uniuyo-article-item{
+
+  .uniuyo-article-item {
     flex-direction: column;
     margin: 0;
+  }
+
+  .uniuyo-donate-items {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .uniuyo-donate button {
+    width: 100%;
+    top: 0;
+    font-weight: 0;
+  }
+
+  .uniuyo-donate-image img {
+    width: 100%;
+  }
+
+  .uniuyo-donate-image {
+    margin: 0;
+  }
+
+  .uniuyo-donate-image h1 {
+    font-size: 25px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  .uniuyo-footer {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .copyright {
+    margin-top: 0;
+  }
+
+  .carousel-text {
+    margin-top: 100px;
   }
 }
