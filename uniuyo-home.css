@@ -229,6 +229,7 @@ article {
   display: grid;
   grid-template-columns: auto auto;
   place-content: center;
+  margin-right: 5em;
 }
 
 .alumni-grid-image {
@@ -243,27 +244,50 @@ article {
   color: var(--green);
 }
 
-.alumni-grid-item{
+.first-grid-1{
   background-color: var(--black);
   color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
 }
-.alumni-grid-item2{
-  margin-top: -5em;
-  margin-left: 2em;
+.first-grid {
   background-color: var(--black);
   color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.first-grid /* used on the first and third grid box to give space at the botton */{
-  margin-bottom: 1.5em;
-}
-.alumni-grid-item img {
+.first-grid img {
   width: 80px;
   height: 80px;
   background-size: contain;
   border-radius: 50%;
 }
-.alumni-grid-item2 img {
+.first-grid-1 img {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  border-radius: 50%;
+}
+.second-grid {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+.second-grid-2{
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+.second-grid img {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  border-radius: 50%;
+}
+.second-grid-2 img {
   width: 80px;
   height: 80px;
   background-size: contain;
