@@ -229,7 +229,7 @@ article {
   display: grid;
   grid-template-columns: auto auto;
   place-content: center;
-  margin-right: 5em;
+  gap: 20px;
 }
 
 .alumni-grid-image {
@@ -255,6 +255,16 @@ article {
   color: var(--white);
   padding: 20px;
   border-radius: 10px;
+}
+.grid-top{
+  margin-top: -5em;
+  margin-bottom: 8em;
+  margin-left: 3em;
+}
+.grid-top2{
+  margin-top: -6em;
+  margin-bottom: 10em;
+  margin-left: 3em;
 }
 
 .first-grid img {
@@ -305,6 +315,13 @@ article {
   margin: auto 30px;
 }
 
+.grid-hover{
+  transition: .4s ease;
+}
+.grid-hover:hover{
+  box-shadow: 2px 2px 3px 4px var(--green);
+  transform: scale(.96);
+}
 /*  Styling for Alumni feedback */
 
 /*  Styling for Article */
@@ -603,7 +620,33 @@ footer {
     margin-top: 0;
   }
 
+  .copyright .copyright-text{
+    margin: 0;
+    place-content: center;
+  }
+
   .carousel-text {
     margin-top: 100px;
+  }
+  .alumni-grid{
+    display: block;
+    flex-direction: column;
+    margin: 0;
+    line-height: 20px;
+  }
+  .grid-top2{
+    margin: 0;
+  }
+  .grid-top{
+    margin: 0;
+  }
+  .first-grid{
+    margin-bottom: 20px;
+  }
+  .second-grid{
+    margin-bottom: 10px;
+  }
+  .second-grid-2{
+    margin-bottom: 20px;
   }
 }
