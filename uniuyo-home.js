@@ -21,5 +21,5 @@ function moveSlider(direction) {
 prevButton.addEventListener('click', () => moveSlider(-1));
 nextButton.addEventListener('click', () => moveSlider(1));
 
-/*  */
+
 

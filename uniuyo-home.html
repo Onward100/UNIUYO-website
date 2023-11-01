@@ -10,6 +10,8 @@
   <!----Bootstrap css link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!---Bootstrap icons link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <!----cdn css link----->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -27,93 +29,170 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
     rel="stylesheet">
 </head>
-
+<div id="preloader"></div>
 <body>
   <header>
+    <!-------Mobile view header--------->
+    <!-----Header------>
+    <div class="logo-mobile">
+    </div>
+    <div class="menu-span">
+      <div class="hamburger">
+        <span class="bars"></span>
+        <span class="bars"></span>
+        <span class="bars"></span>
+      </div>
+      <img src="/Images/logo-uniuyo-header.png" class="logo-img" alt="UniUyo logo">
+      <form class="d-lg-flex d-lg-block" role="search">
+        <div class="input-group search-input">
+          <button class="btn btn-secondary search-btn" type="button" id="button-addon2"><i
+              class="bi bi-search"></i></button>
+        </div>
+      </form>
+      <!-- <input type="text" class="form-control" placeholder="Search here..." aria-label="Recipient's username"
+            aria-describedby="button-addon2"> -->
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-text">
+            <h2>UNIVERSITY OF UYO IS A BRAND</h2>
+            <p>We believe that there is nothing more important than skillful education</p>
+            <button>See More</button>
+          </div>
+          <img src="/Images/bg-UniUyo.jpg" class="d-block w-100" alt="slide 1">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-text">
+            <h2>UNIVERSITY OF UYO IS A BRAND</h2>
+            <p>We believe that there is nothing more important than skillful education</p>
+            <a href="#"><button>See More</button></a>
+          </div>
+          <img src="/Images/graduate.jpg" class="d-block w-100" alt="slide 2">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-text">
+            <h2>UNIVERSITY OF UYO IS A BRAND</h2>
+            <p>We believe that there is nothing more important than skillful education</p>
+            <button>See More</button>
+          </div>
+          <img src="/Images/Engineering-faculty.jpg" class="d-block w-100" alt="slide 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!---Why UniUyo---->
+  <section class="Why-uniuyo">
+    <h2 class="header">WHY UNIUYO</h2>
+    <p>
+      In UNIUYO, admission is strictly by merit.</p>
+    <div class="student">
+      <div class="student-content">
+        <img src="/Images/Engineering-faculty.jpg" alt="">
+      </div>
+      <p> UNIUYO is the only university in the south-east where Electronics and Computer Engineering has been accredited by the National Universities Commission and COREN.</p>
+      <div class="student-content">
+        <img src="/Images/students.jpg">
+      </div>
+      <a href="https://uniuyo.edu.ng/history/"><a href="#"><button class="see-more-btn">See More</button></a></a>
+  </section>
+
+    <!-------Mobile view--------->
+
+    <!-------Desktop view header--------->
     <div class="logo">
       <img src="/Images/logo-uniuyo-header.png" alt="UniUyo logo">
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ms-auto" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Admission & Aid
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Undergraduate</a></li>
-                <li><a class="dropdown-item" href="#">Post graduate </a></li>
-                <li><a class="dropdown-item" href="#">Continuing Education</a></li>
-                <li><a class="dropdown-item" href="#">School of Basic Studies</a></li>
-                <li><a class="dropdown-item" href="#">Sandwich Programme</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Administration</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Governing Council</a></li>
-                <li><a class="dropdown-item" href="#">University Management</a></li>
-                <li><a class="dropdown-item" href="#">Faculties</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                About us
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Why UniUyo</a></li>
-                <li><a class="dropdown-item" href="#">Missions & Vision</a></li>
-                <li><a class="dropdown-item" href="#">Our History</a></li>
-                <li><a class="dropdown-item" href="#">Core Values</a></li>
-                <li><a class="dropdown-item" href="#">Goals</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Research
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Journals</a></li>
-                <li><a class="dropdown-item" href="#">Publications</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" role="button">
-                Alumni
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                e-portals
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://uniuyo.edu.ng/eportals/" target="_blank">Student's
-                    e-portal</a></li>
-                <li><a class="dropdown-item" href="#">Staff e-portal</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-lg-flex d-lg-block" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+    <div class="menu-span desktop">
+      <div class="hamburger">
+        <span class="bars"></span>
+        <span class="bars"></span>
+        <span class="bars"></span>
       </div>
-    </nav>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <span class="menu">Menu</span>
+      <form class="d-lg-flex d-lg-block" role="search">
+        <div class="input-group search-input">
+          <input type="text" class="form-control" placeholder="Search here..." aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-secondary search-btn" type="button" id="button-addon2"><i
+              class="bi bi-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="navbar-slide">
+      <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="uniuyo-home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Admission & Aid
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+            <li><a class="dropdown-item" href="#">Post graduate </a></li>
+            <li><a class="dropdown-item" href="#">Continuing Education</a></li>
+            <li><a class="dropdown-item" href="#">School of Basic Studies</a></li>
+            <li><a class="dropdown-item" href="#">Sandwich Programme</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropDownClick" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Administration</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Governing Council</a></li>
+            <li><a class="dropdown-item" href="#">University Management</a></li>
+            <li><a class="dropdown-item" href="#">Faculties</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Why UniUyo</a></li>
+            <li><a class="dropdown-item" href="#">Missions & Vision</a></li>
+            <li><a class="dropdown-item" href="#">Our History</a></li>
+            <li><a class="dropdown-item" href="#">Core Values</a></li>
+            <li><a class="dropdown-item" href="#">Goals</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Research
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Journals</a></li>
+            <li><a class="dropdown-item" href="#">Publications</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" role="button">
+            Alumni
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            e-portals
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://uniuyo.edu.ng/eportals/" target="_blank">Student's
+                e-portal</a></li>
+            <li><a class="dropdown-item" href="#">Staff e-portal</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide desktop" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="carousel-text">
@@ -154,7 +233,7 @@
   </header>
   <br>
   <!---Why UniUyo---->
-  <section class="Why-uniuyo">
+  <section class="Why-uniuyo desktop">
     <h2 class="header">WHY UNIUYO</h2>
     <p>
       In UNIUYO, admission is strictly by merit. UNIUYO is the only university in the south-east where Electronics and
@@ -323,7 +402,7 @@
             knowledge that shaped my career. Proud to be an alumnus!"</p>
         </div>
       </div>
-  
+
       <div class="alumni-grid-item2">
         <div class="second-grid-2 grid-hover">
           <div class="alumni-grid-image">
@@ -448,6 +527,7 @@
             <li><a href="#">Perm-site Campus</a></li>
             <li><a href="#">Town Campus</a></li>
             <li><a href="#">Annex Campus</a></li>
+            <li><a href="#">Ime Umanah</a></li>
             <li><a href="#">Teaching Hospital</a></li>
           </ul>
         </div>
@@ -478,10 +558,6 @@
       <p class="site-credit">Site Credit: Manny Mike & Woruka O. Onward</p>
     </div>
   </footer>
-
-
-
-
 
 
   <!----Custom js link----->
@@ -518,6 +594,33 @@
         }
       }
     })
+
+    /* Hamburger */
+    const hamburger = document.querySelector(".hamburger");
+    const navlink = document.querySelector(".nav-link");
+    const navbarslide = document.querySelector(".navbar-slide");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navlink.classList.toggle("active");
+      navbarslide.classList.toggle("active");
+    })
+    document.querySelectorAll(".dropdown-item").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navlink.classList.remove("active");
+      navbarslide.classList.remove("active");
+    }))
+    document.onclick = function (e) {
+      if (!hamburger.contains(e.target) && !navbarslide.contains(e.target)) {
+        hamburger.classList.remove("active");
+        navlink.classList.remove("active");
+        navbarslide.classList.remove("active");
+      }
+    }
+    /* Preloader */
+    setTimeout(function(){
+      $("#preloader").fadeToggle();
+    }, 1000);
   </script>
 </body>
 
