@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!----Favicon----->
+  <link rel="icon" href="/Images/UniUyo-logo.jpg" type="image/x-icon">
+  <title>UNIVERSITY OF UYO</title>
+  <!----Bootstrap css link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!---Bootstrap icons link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!----cdn css link----->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----cdn css default link------>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----custom css link------>
+  <link rel="stylesheet" href="style.css">
+  <!----Google fonts link----->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+<div id="preloader"></div>
+
+<body>
+  <header>
+    <!-------Desktop view header--------->
+    <div class="logo">
+      <img src="/Images/logo-uniuyo-header.png" alt="UniUyo logo">
+    </div>
+    <div class="menu-span">
+      <div class="hamburger">
+        <span class="bars"></span>
+        <span class="bars"></span>
+        <span class="bars"></span>
+      </div>
+      <span class="menu mobile-view">Menu</span>
+      <form class="d-lg-flex d-lg-block" role="search">
+        <div class="input-group search-input">
+          <input type="text" class="form-control" placeholder="Search here..." aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-secondary search-btn" type="button" id="button-addon2"><i
+              class="bi bi-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="navbar-slide">
+      <div class="close-icon"><i class="fa-solid fa-x"></i></div>
+      <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="uniuyo-home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Admission & Aid
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+            <li><a class="dropdown-item" href="#">Post graduate </a></li>
+            <li><a class="dropdown-item" href="#">Continuing Education</a></li>
+            <li><a class="dropdown-item" href="#">School of Basic Studies</a></li>
+            <li><a class="dropdown-item" href="#">Sandwich Programme</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropDownClick" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Administration</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Governing Council</a></li>
+            <li><a class="dropdown-item" href="#">University Management</a></li>
+            <li><a class="dropdown-item" href="#">Faculties</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Why UniUyo</a></li>
+            <li><a class="dropdown-item" href="#">Missions & Vision</a></li>
+            <li><a class="dropdown-item" href="#">Our History</a></li>
+            <li><a class="dropdown-item" href="#">Core Values</a></li>
+            <li><a class="dropdown-item" href="#">Goals</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Research
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Journals</a></li>
+            <li><a class="dropdown-item" href="#">Publications</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" role="button">
+            Alumni
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            e-portals
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://uniuyo.edu.ng/eportals/" target="_blank">Student's
+                e-portal</a></li>
+            <li><a class="dropdown-item" href="#">Staff e-portal</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <br>
+
+  <!-----desktop uniuyo-article------->
+  <div class="article-header">
+    <span>Back</span>
+    <h4 class="header">Journals and Publications</h4>
+  </div>
+  <article class="article">
+    <div class="uniuyo-article">
+      <h2 class="header">Article & Publications</h2>
+      <div class="uniuyo-article-item">
+        <div class="uniuyo-article-content">
+          <div class="article-item">
+            <img src="/Images/journal1.jpg" alt="">
+            <div class="article-content-text">
+              <a href="#"><button class="see-more-btn">See More</button></a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="uniuyo-article-content">
+          <div class="article-item">
+            <img src="/Images/journal.jpg" alt="">
+            <div class="article-content-text">
+              <a href="#"><button class="see-more-btn">See More</button></a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="uniuyo-article-content desktop">
+          <div class="article-item">
+            <img src="/Images/journal2.jpg" alt="">
+            <div class="article-content-text">
+                <a href="#"><button class="see-more-btn">See More</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-----Footer----->
+  <footer>
+    <div class="uniuyo-footer">
+      <!----First footer block---->
+      <div class="footer-logo">
+        <img src="/Images/UniUyo-logo.jpg" alt="" class="footer-img">
+        <div class="find-us">
+          <h2>Find Us</h2>
+          <div class="footer-social-icons">
+            <a href="#" class="socials"><img src="/Images/X-icon.jpg " alt=""></a>
+            <a href="#" class="socials"><img src="/Images/uniuyo-facebook.jpg" alt=""></a>
+            <a href="#" class="socials"><img src="/Images/uniuyo-IG.jpg" alt=""></a>
+            <a href="#" class="socials"><img src="/Images/uniuyo-linkedin.jpg" alt=""></a>
+          </div>
+          <p>Postal Box: P.M.B 1017,
+            Uyo, Aks.
+            registrar@uniuyo.edu.ng
+            +234(0)-8146129875,
+            +234(0)-7017747407
+          </p>
+        </div>
+      </div>
+      <div class="footer-content">
+        <!---Second Footer links--->
+        <div class="campuses">
+          <h3 class="footer-links">Campuses</h3>
+          <ul>
+            <li><a href="#">Perm-site Campus</a></li>
+            <li><a href="#">Town Campus</a></li>
+            <li><a href="#">Annex Campus</a></li>
+            <li><a href="#">Ime Umanah</a></li>
+            <li><a href="#">Teaching Hospital</a></li>
+          </ul>
+        </div>
+        <!------Third footer links----->
+        <div class="student-life">
+          <h3 class="footer-links">Student life</h3>
+          <ul>
+            <li><a href="#">First year in UniUyo</a></li>
+            <li><a href="#">Accomodation</a></li>
+          </ul>
+        </div>
+        <!-----Fourth footer links-->
+        <div class="divisions">
+          <h3 class="footer-links">Divisions</h3>
+          <ul>
+            <li><a href="#">Faculties</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Transcripts</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="copyright-text"><i class="fa-regular fa-copyright"></i>
+        <h5>Copyright University of Uyo</h5>
+      </div>
+      <p class="site-credit desktop">Site Credit: Manny Mike & Woruka O. Onward</p>
+    </div>
+  </footer>
+
+
+  <!----Custom js link----->
+  <script src="uniuyo-home.js"></script>
+  <!----Bootstrap js link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-----jquery link------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!----font awesome link---->
+  <script src="https://kit.fontawesome.com/b2437ff86c.js" crossorigin="anonymous"></script>
+  <!-----Cdn js link----->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+
+        1000: {
+          items: 3
+        }
+      }
+    })
+
+    /* Hamburger */
+    const hamburger = document.querySelector(".hamburger");
+    const navlink = document.querySelector(".nav-link");
+    const navbarslide = document.querySelector(".navbar-slide");
+    const closeicon = document.querySelector(".close-icon")
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navlink.classList.toggle("active");
+      navbarslide.classList.toggle("active");
+      closeicon.classList.toggle("active");
+    })
+    document.querySelectorAll(".dropdown-item").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navlink.classList.remove("active");
+      navbarslide.classList.remove("active");
+      closeicon.classList.remove("active");
+    }))
+    document.onclick = function (e) {
+      if (!hamburger.contains(e.target) && !navbarslide.contains(e.target)) {
+        hamburger.classList.remove("active");
+        navlink.classList.remove("active");
+        navbarslide.classList.remove("active");
+        closeicon.classList.remove("active");
+      }
+    }
+    /* Preloader */
+    setTimeout(function () {
+      $("#preloader").fadeToggle();
+    }, 1000);
+  </script>
+</body>
+
+</html>

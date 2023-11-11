@@ -65,6 +65,10 @@ nav .navbar-toggler {
   cursor: pointer;
 }
 
+.mobile-view {
+  display: none;
+}
+
 .bars {
   display: block;
   width: 25px;
@@ -99,7 +103,7 @@ header .menu {
 }
 
 .menu-span form {
-  margin-left: 905px;
+  margin-left: 970px;
 }
 
 .menu-span a {
@@ -228,7 +232,6 @@ header span {
 
 /*  Styling for Why-uniuyo */
 
-
 /*  Styling for Faculties */
 
 .faculties {
@@ -329,7 +332,6 @@ header span {
 }
 
 /*  Styling for UniUyo news */
-
 
 /*  Styling for Alumni feedback */
 
@@ -636,30 +638,60 @@ footer {
 
 
 
-
-
 /* Mobile view */
-@media (max-width: 800px) {
+@media (min-width: 375px) and (max-width: 767px) {
+  .mobile-view {
+    display: block;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 10px;
+    margin-left: -35px !important;
+  }
+
+  .menu-span .logo-img {
+    margin-left: -5px !important;
+  }
+
+  .menu-span button {
+    margin-left: 5px !important;
+    background-color: var(--green) !important;
+    transition: .3s ease;
+  }
+
+  .menu-span button:focus {
+    transform: scale(.9);
+  }
+
   .carousel-text {
     margin: 0;
     text-align: center;
+    margin-top: 150px !important;
+    margin-left: 20px !important;
+  }
+
+  .faculties {
+    margin-top: -20px !important;
+    margin: 0;
+  }
+
+  .faculties button {
+    margin-top: -50px !important;
   }
 
   .see-more-btn {
     width: 30%;
+    margin-top: -30px !important;
   }
 
   .student {
-    flex-direction: column;
+    display: block;
     margin: 0;
   }
 
   .student img {
     width: 100%;
-  }
-
-  .faculties {
-    margin: 0;
   }
 
   .faculties-item {
@@ -672,13 +704,12 @@ footer {
   }
 
   .news-content {
-    flex-direction: column;
+    display: block;
     margin: 0;
   }
 
-  .alumni-grid-content {
-    flex-direction: column;
-    margin: 0;
+  .alumni-grid-item {
+    margin-top: -90px !important;
   }
 
   .alumni-grid {
@@ -686,25 +717,23 @@ footer {
   }
 
   .uniuyo-article-item {
-    flex-direction: column;
+    display: block;
     margin: 0;
+  }
+
+  article button {
+    width: 80% !important;
   }
 
   .uniuyo-donate-items {
-    flex-direction: column;
+    display: block;
     margin: 0;
   }
-
-  .footer-content {
-    flex-direction: column;
-    margin: 0;
-  }
-
 
   .uniuyo-donate button {
-    width: 100%;
-    margin: 0;
-    font-weight: 0;
+    width: 80%;
+    margin: auto 35px;
+    font-size: 21px;
   }
 
   .uniuyo-donate-image img {
@@ -720,18 +749,30 @@ footer {
   }
 
   footer {
-    padding: 15px;
+    padding: 0;
+  }
+
+  .footer-logo {
+    position: relative;
+    top: 120px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .footer-logo .footer-img {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
   }
 
   .uniuyo-footer {
-    flex-direction: column;
     padding: 0;
   }
 
   .footer-content {
-    flex-direction: column;
     margin: 0;
     padding: 0;
+    font-size: 18px;
   }
 
   .copyright {
@@ -749,7 +790,7 @@ footer {
 
   .alumni-grid {
     display: block;
-    flex-direction: column;
+    display: block;
     margin: 0;
     line-height: 20px;
   }
@@ -777,52 +818,280 @@ footer {
   nav .navbar-toggler {
     margin-left: 295px;
   }
-  .navbar-slide{
+
+  .navbar-slide {
     width: 70%;
   }
-  .nav-link{
+
+  .nav-link {
     margin-left: -20px;
   }
-  .hamburger{
-    margin-left: -35px !important;
+
+  .menu-span form {
+    margin-left: -38px !important;
   }
-  .menu-span form{
-   margin-left: -38px !important;
-  }
-  .dropdown-menu{
+
+  .dropdown-menu {
     margin-left: 10px !important;
     width: 220px !important;
     margin-top: 5px !important;
   }
-  .logo-mobile{
+
+  .logo-mobile {
     display: flex;
     gap: 5px;
     vertical-align: middle;
   }
-  .menu-span img{
+
+  .menu-span img {
     transform: scale(.7);
     margin-left: -30px !important;
-    margin-top: -16px;  
+    margin-top: -16px;
   }
- .logo{
-  display: none;
- }
- .desktop{
-  display: none;
- }
- .search-btn {
-  transition: .3s ease;
-  background: none !important;
-  color: var(--black) !important;
-  border: none !important;
-  font-size: 19px;
-}
-.Why-uniuyo{
-  text-align: center;
+
+  .logo {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .search-btn {
+    transition: .3s ease;
+    background: none !important;
+    color: var(--black) !important;
+    border: none !important;
+    font-size: 19px;
+  }
+
+  .Why-uniuyo {
+    text-align: center;
+  }
+
+  .Why-uniuyo p {
+    width: 100%;
+
+  }
 }
 
-.Why-uniuyo p {
-  width: 100%;
+/* tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu-span form {
+    margin-left: 310px;
+  }
 
+  .student {
+    margin: 0;
+  }
+
+  .faculties-item {
+    margin: 0;
+  }
+
+  .picture-flex-content p {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .uniuyo-article-item {
+    margin: 0;
+    gap: 10px;
+  }
+
+  .uniuyo-article-content {
+    width: 50%;
+  }
+
+  .article-content-text {
+    width: fit-content;
+    margin: 0;
+  }
+
+  article button {
+    width: 50% !important;
+    margin: 0;
+    margin-top: -90px !important;
+  }
+
+  .copyright .copyright-text {
+    width: 60%;
+    margin: 0;
+    margin-left: 360px;
+  }
+
+  .copyright .site-credit {
+    width: 100%;
+    margin: auto 150px;
+  }
+
+  .uniuyo-donate-image {
+    margin: 0;
+  }
+
+  .uniuyo-donate-image h1 {
+    width: 90%;
+  }
+
+  .uniuyo-donate-image img {
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .uniuyo-donate button {
+    font-size: 23px;
+    width: 100% !important;
+    margin-top: 190px;
+  }
+
+  .uniuyo-donate-items {
+    gap: 30px;
+    margin: 0;
+  }
+
+  .footer-logo {
+    margin-left: -10px;
+  }
 }
+
+/* Mobile view
+@media (min-width: 375px) and (max-width: 767px) {
+  .see-more-btn {
+    width: 30%;
+  }
+
+  .uniuyo-article-item {
+    display: block;
+    margin: 0;
+  }
+
+  .footer-content {
+    display: block;
+    margin: 0;
+  }
+
+  footer {
+    padding: 0;
+    margin: 0;
+  }
+
+  .uniuyo-footer {
+    display: block;
+    padding: 0;
+  }
+
+  .footer-content {
+    font-size: 10px;
+    display: flex;
+    gap: 0;
+    margin-left: 0;
+    margin-top: -60px;
+  }
+
+  .footer-links {
+    font-size: 15px;
+  }
+
+  .footer-logo {
+    display: flex;
+    margin: 0;
+    position: relative;
+    top: 260px;
+    padding: 5px;
+  }
+
+  .footer-logo img {
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    margin-right: 5px;
+  }
+
+  .footer-social-icons {
+    gap: 5px;
+  }
+
+  .copyright {
+    margin-top: 80px;
+  }
+
+  .copyright .copyright-text {
+    margin: 0;
+    place-content: center;
+  }
+
+  nav .navbar-toggler {
+    margin-left: 295px;
+  }
+
+  .navbar-slide {
+    width: 70%;
+  }
+
+  .nav-link {
+    margin-left: -20px;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+  }
+
+  .menu-span form {
+    margin-left: -43px !important;
+  }
+
+  .menu-span input {
+    display: none;
+  }
+
+  .dropdown-menu {
+    margin-left: 10px !important;
+    width: 220px !important;
+    margin-top: 5px !important;
+  }
+
+  .logo-mobile {
+    display: flex;
+    gap: 5px;
+    vertical-align: middle;
+  }
+
+  .menu {
+    display: none !important;
+  }
+
+  .menu-span img {
+    transform: scale(.7);
+    margin-left: 7px !important;
+    margin-top: -16px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .search-btn {
+    transition: .3s ease;
+    background: none !important;
+    color: var(--black) !important;
+    border: none !important;
+    font-size: 19px;
+    display: none;
+  }
+
+  .search-btn2 {
+    transition: .3s ease;
+    background: none !important;
+    color: var(--black) !important;
+    border: none !important;
+    font-size: 19px;
+  }
 }
+*/

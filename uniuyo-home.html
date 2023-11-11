@@ -30,11 +30,86 @@
     rel="stylesheet">
 </head>
 <div id="preloader"></div>
+
 <body>
   <header>
-    <!-------Mobile view header--------->
-    <!-----Header------>
-    <div class="logo-mobile">
+    <div class="mobile-view">
+      <!-------Mobile view header--------->
+      <!-----Header------>
+      <div class="menu-span">
+        <img src="/Images/logo-uniuyo-header.png" class="logo-img" alt="UniUyo logo">
+        <form class="d-lg-flex d-lg-block" role="search">
+          <div class="input-group search-input">
+            <button class="btn btn-secondary search-btn2" type="button" id="button-addon2"><i
+                class="bi bi-search"></i></button>
+          </div>
+        </form>
+        <!-- <input type="text" class="form-control" placeholder="Search here..." aria-label="Recipient's username"
+            aria-describedby="button-addon2"> -->
+      </div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-text">
+              <h2>University of Uyo is a Brand</h2>
+              <p class="desktop">We believe that there is nothing more important than skillful education</p>
+              <button>See More</button>
+            </div>
+            <img src="/Images/bg-UniUyo.jpg" class="d-block w-100" alt="slide 1">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-text">
+              <h2>University of Uyo is a Brand</h2>
+              <p class="desktop">We believe that there is nothing more important than skillful education</p>
+              <a href="#"><button>See More</button></a>
+            </div>
+            <img src="/Images/graduate.jpg" class="d-block w-100" alt="slide 2">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-text">
+              <h2>University of Uyo is a Brand</h2>
+              <p class="desktop">We believe that there is nothing more important than skillful education</p>
+              <button>See More</button>
+            </div>
+            <img src="/Images/Engineering-faculty.jpg" class="d-block w-100" alt="slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!---Why UniUyo---->
+      <section class="Why-uniuyo">
+        <h2 class="header">Why UniUyo</h2>
+        <p>
+          In UNIUYO, admission is strictly by merit.</p>
+        <div class="student">
+          <div class="student-content">
+            <img src="/Images/Engineering-faculty.jpg" alt="">
+          </div>
+          <br>
+          <p> UNIUYO is the only university in the south-east where Electronics and Computer Engineering has been
+            accredited by the National Universities Commission and COREN.</p>
+          <br>
+          <div class="student-content">
+            <img src="/Images/students.jpg">
+          </div>
+          <br>
+          <a href="https://uniuyo.edu.ng/history/"><a href="#"><button class="see-more-btn">See More</button></a></a>
+      </section>
+    </div>
+    <!-------Mobile view--------->
+
+    <!-------Desktop view header--------->
+    <div class="logo">
+      <img src="/Images/logo-uniuyo-header.png" alt="UniUyo logo">
     </div>
     <div class="menu-span">
       <div class="hamburger">
@@ -42,84 +117,8 @@
         <span class="bars"></span>
         <span class="bars"></span>
       </div>
-      <img src="/Images/logo-uniuyo-header.png" class="logo-img" alt="UniUyo logo">
-      <form class="d-lg-flex d-lg-block" role="search">
-        <div class="input-group search-input">
-          <button class="btn btn-secondary search-btn" type="button" id="button-addon2"><i
-              class="bi bi-search"></i></button>
-        </div>
-      </form>
-      <!-- <input type="text" class="form-control" placeholder="Search here..." aria-label="Recipient's username"
-            aria-describedby="button-addon2"> -->
-    </div>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="carousel-text">
-            <h2>UNIVERSITY OF UYO IS A BRAND</h2>
-            <p>We believe that there is nothing more important than skillful education</p>
-            <button>See More</button>
-          </div>
-          <img src="/Images/bg-UniUyo.jpg" class="d-block w-100" alt="slide 1">
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-text">
-            <h2>UNIVERSITY OF UYO IS A BRAND</h2>
-            <p>We believe that there is nothing more important than skillful education</p>
-            <a href="#"><button>See More</button></a>
-          </div>
-          <img src="/Images/graduate.jpg" class="d-block w-100" alt="slide 2">
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-text">
-            <h2>UNIVERSITY OF UYO IS A BRAND</h2>
-            <p>We believe that there is nothing more important than skillful education</p>
-            <button>See More</button>
-          </div>
-          <img src="/Images/Engineering-faculty.jpg" class="d-block w-100" alt="slide 3">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!---Why UniUyo---->
-  <section class="Why-uniuyo">
-    <h2 class="header">WHY UNIUYO</h2>
-    <p>
-      In UNIUYO, admission is strictly by merit.</p>
-    <div class="student">
-      <div class="student-content">
-        <img src="/Images/Engineering-faculty.jpg" alt="">
-      </div>
-      <p> UNIUYO is the only university in the south-east where Electronics and Computer Engineering has been accredited by the National Universities Commission and COREN.</p>
-      <div class="student-content">
-        <img src="/Images/students.jpg">
-      </div>
-      <a href="https://uniuyo.edu.ng/history/"><a href="#"><button class="see-more-btn">See More</button></a></a>
-  </section>
-
-    <!-------Mobile view--------->
-
-    <!-------Desktop view header--------->
-    <div class="logo">
-      <img src="/Images/logo-uniuyo-header.png" alt="UniUyo logo">
-    </div>
-    <div class="menu-span desktop">
-      <div class="hamburger">
-        <span class="bars"></span>
-        <span class="bars"></span>
-        <span class="bars"></span>
-      </div>
-      <span class="menu">Menu</span>
-      <form class="d-lg-flex d-lg-block" role="search">
+      <span class="menu desktop">Menu</span>
+      <form class="d-lg-flex d-lg-block desktop" role="search">
         <div class="input-group search-input">
           <input type="text" class="form-control" placeholder="Search here..." aria-label="Recipient's username"
             aria-describedby="button-addon2">
@@ -129,6 +128,7 @@
       </form>
     </div>
     <div class="navbar-slide">
+      <div class="close-icon"><i class="fa-solid fa-x"></i></div>
       <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="uniuyo-home.html">Home</a>
@@ -234,9 +234,10 @@
   <br>
   <!---Why UniUyo---->
   <section class="Why-uniuyo desktop">
-    <h2 class="header">WHY UNIUYO</h2>
+    <h2 class="header">Why UniUyo</h2>
+    <p>In UNIUYO, admission is strictly by merit.</p>
     <p>
-      In UNIUYO, admission is strictly by merit. UNIUYO is the only university in the south-east where Electronics and
+      UNIUYO is the only university in the south-east where Electronics and
       Computer Engineering has been accredited by the National Universities Commission and COREN.
     </p>
     <br>
@@ -250,16 +251,15 @@
         <img src="/Images/students.jpg">
       </div>
   </section>
-  <br>
   <!----Faculties------>
   <section class="faculties">
-    <h2 class="header">FACULTIES IN UNIUYO</h2>
+    <h2 class="header">Faculties in UniUyo</h2>
     <div class="faculties-item">
       <div class="faculties-content">
         <img src="/Images/Engineering-faculty.jpg" alt="">
         <p class="law">Engineering Faculty</p>
       </div>
-      <div class="faculties-content">
+      <div class="faculties-content desktop">
         <img src="/Images/Law-faculty.jpg">
         <p class="law">Law Faculty</p>
       </div>
@@ -269,16 +269,17 @@
         <img src="/Images/Pharmacy-faculty.jpg" alt="">
         <p class="science">Pharmacy Faculty</p>
       </div>
-      <div class="faculties-content">
+      <div class="faculties-content desktop">
         <img src="/Images/Science-faculty.jpg">
         <p class="science">Science Faculty</p>
       </div>
     </div>
     <a href="#"><button class="see-more-btn">See More</button></a>
   </section>
-  <br>
+
   <!-----Campuses------>
   <section class="picture-flex">
+    <h2 class="header mobile-view">Tour our Campuses</h2>
     <div class="picture-flex-content">
       <div class="picture-item"><img src="/Images/Permsite.jpg" alt="">
         <p>Permsite Campus</p>
@@ -286,19 +287,18 @@
       <div class="picture-item"><img src="/Images/Towncampus.jpg" alt="">
         <p>Town Campus</p>
       </div>
-      <div class="picture-item"><img src="/Images/Engineering-faculty.jpg" alt="">
+      <div class="picture-item desktop"><img src="/Images/Engineering-faculty.jpg" alt="">
         <p>Science Campus</p>
       </div>
-      <div class="picture-item"><img src="/Images/Annex-campus.jpg" alt="">
+      <div class="picture-item desktop"><img src="/Images/Annex-campus.jpg" alt="">
         <p>Annex Campus</p>
       </div>
     </div>
   </section>
-  <br>
 
   <!-----UniUyo news----->
   <section class="uniuyo-news">
-    <h2 class="header">UNIUYO NEWS</h2>
+    <h2 class="header">UniUyo News</h2>
     <div class="owl-carousel owl-theme">
       <div class="item">
         <img src="/Images/News-2.jpg" alt="">
@@ -362,12 +362,12 @@
     </div>
   </section>
   <br>
-  <!----Alumni feedback----->
 
+  <!----Alumni feedback----->
   <section class="alumni">
-    <h2 class="header">STUDENTS & ALUMNI FEEDBACK</h2>
-    <br><br><br><br>
+    <h2 class="header">Students & Alumni Feedback</h2>
     <!-- class="owl-carousel owl-theme" -->
+    <br><br><br><br>
     <div class="alumni-grid">
       <div class="alumni-grid-item">
         <div class="first-grid-1 grid-hover">
@@ -386,7 +386,7 @@
         </div>
         <br>
       </div>
-      <div class="first-grid grid-top grid-hover">
+      <div class="first-grid grid-top grid-hover desktop">
         <div class="alumni-grid-image">
           <img src="/Images/student1.jpg" alt="" />
         </div>
@@ -403,7 +403,7 @@
         </div>
       </div>
 
-      <div class="alumni-grid-item2">
+      <div class="alumni-grid-item2 desktop">
         <div class="second-grid-2 grid-hover">
           <div class="alumni-grid-image">
             <img src="/Images/student1.jpg" alt="" />
@@ -440,41 +440,43 @@
       </div>
     </div>
   </section>
-  <br> <br>
-  <!-----uniuyo-article------->
 
+  <!-----desktop uniuyo-article------->
   <article class="article">
     <div class="uniuyo-article">
-      <h2 class="header">ARTICLE & PUBLICATION</h2> <br>
+      <h2 class="header">Article & Publications</h2>
       <div class="uniuyo-article-item">
         <div class="uniuyo-article-content">
           <div class="article-item">
             <img src="/Images/journal1.jpg" alt="">
             <div class="article-content-text">
               <h3>Sales of Admission forms for 2023/2024 Academic session into School of Basic Studies</h3>
-              <p>Applications are invited from suitably qualified candidates for admission into the Pre-Degree and Basic
+              <p>Applications are invited from suitably qualified candidates for admission into the Pre-Degree and
+                Basic
                 Studies</p>
             </div>
           </div>
         </div>
-
+        <br>
         <div class="uniuyo-article-content">
           <div class="article-item">
             <img src="/Images/journal.jpg" alt="">
             <div class="article-content-text">
               <h3>Sales of Admission forms for 2023/2024 Academic session into School of Basic Studies</h3>
-              <p>Applications are invited from suitably qualified candidates for admission into the Pre-Degree and Basic
+              <p>Applications are invited from suitably qualified candidates for admission into the Pre-Degree and
+                Basic
                 Studies</p>
             </div>
           </div>
         </div>
-
-        <div class="uniuyo-article-content">
+        <br>
+        <div class="uniuyo-article-content desktop">
           <div class="article-item">
             <img src="/Images/journal2.jpg" alt="">
             <div class="article-content-text">
               <h3>Sales of Admission forms for 2023/2024 Academic session into School of Basic Studies</h3>
-              <p>Applications are invited from suitably qualified candidates for admission into the Pre-Degree and Basic
+              <p>Applications are invited from suitably qualified candidates for admission into the Pre-Degree and
+                Basic
                 Studies</p>
             </div>
           </div>
@@ -502,7 +504,7 @@
     <div class="uniuyo-footer">
       <!----First footer block---->
       <div class="footer-logo">
-        <img src="/Images/UniUyo-logo.jpg" alt="">
+        <img src="/Images/UniUyo-logo.jpg" alt="" class="footer-img">
         <div class="find-us">
           <h2>Find Us</h2>
           <div class="footer-social-icons">
@@ -555,7 +557,7 @@
       <div class="copyright-text"><i class="fa-regular fa-copyright"></i>
         <h5>Copyright University of Uyo</h5>
       </div>
-      <p class="site-credit">Site Credit: Manny Mike & Woruka O. Onward</p>
+      <p class="site-credit desktop">Site Credit: Manny Mike & Woruka O. Onward</p>
     </div>
   </footer>
 
@@ -599,26 +601,30 @@
     const hamburger = document.querySelector(".hamburger");
     const navlink = document.querySelector(".nav-link");
     const navbarslide = document.querySelector(".navbar-slide");
+    const closeicon = document.querySelector(".close-icon")
 
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("active");
       navlink.classList.toggle("active");
       navbarslide.classList.toggle("active");
+      closeicon.classList.toggle("active");
     })
     document.querySelectorAll(".dropdown-item").forEach(n => n.addEventListener("click", () => {
       hamburger.classList.remove("active");
       navlink.classList.remove("active");
       navbarslide.classList.remove("active");
+      closeicon.classList.remove("active");
     }))
     document.onclick = function (e) {
       if (!hamburger.contains(e.target) && !navbarslide.contains(e.target)) {
         hamburger.classList.remove("active");
         navlink.classList.remove("active");
         navbarslide.classList.remove("active");
+        closeicon.classList.remove("active");
       }
     }
     /* Preloader */
-    setTimeout(function(){
+    setTimeout(function () {
       $("#preloader").fadeToggle();
     }, 1000);
   </script>
