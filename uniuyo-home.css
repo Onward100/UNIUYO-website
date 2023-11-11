@@ -655,8 +655,13 @@ footer {
   }
 
   .menu-span button {
-    margin-left: 5px !important;
     background-color: var(--green) !important;
+    color: var(--white) !important;
+    transition: .3s ease;
+  }
+
+  .menu-span form {
+    margin-left: -38px !important;
     transition: .3s ease;
   }
 
@@ -752,13 +757,6 @@ footer {
     padding: 0;
   }
 
-  .footer-logo {
-    position: relative;
-    top: 120px;
-    display: flex;
-    gap: 10px;
-  }
-
   .footer-logo .footer-img {
     width: 50px;
     height: 50px;
@@ -770,9 +768,17 @@ footer {
   }
 
   .footer-content {
+    position: relative;
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    gap: 0 !important;
+    font-size: 16px;
+    left: -260px !important;
+  }
+
+  .footer-links {
+    font-size: 16px;
+    margin-left: 30px !important;
   }
 
   .copyright {
@@ -825,10 +831,6 @@ footer {
 
   .nav-link {
     margin-left: -20px;
-  }
-
-  .menu-span form {
-    margin-left: -38px !important;
   }
 
   .dropdown-menu {
